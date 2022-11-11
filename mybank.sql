@@ -43,24 +43,7 @@ INSERT INTO `branch` (`branchId`, `branchNo`, `branchName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `feedback`
 --
-
-CREATE TABLE `feedback` (
-  `feedbackId` int(11) NOT NULL,
-  `message` text NOT NULL,
-  `userId` double NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `feedback`
---
-
-INSERT INTO `feedback` (`feedbackId`, `message`, `userId`, `date`) VALUES
-(1, 'This is testing message to admin or manager by fk', 1, '2017-12-15 04:30:48'),
-(3, 'This is testing message to admin or manager by fk', 2, '2017-12-15 04:30:48'),
-(4, 'this is help card for admin', 1, '2017-12-17 06:45:20');
 
 -- --------------------------------------------------------
 
@@ -93,20 +76,7 @@ INSERT INTO `login` (`id`, `email`, `password`, `type`, `date`) VALUES
 -- Table structure for table `notice`
 --
 
-CREATE TABLE `notice` (
-  `id` int(11) NOT NULL,
-  `userId` varchar(111) NOT NULL,
-  `notice` text NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `notice`
---
-
-INSERT INTO `notice` (`id`, `userId`, `notice`, `date`) VALUES
-(1, '1', 'Dear Customer! <br> OUr privacy policy is changed for account information get new prospectus from your nearest branch', '2017-12-14 13:11:46'),
-(6, '2', 'Dear Ali,<br>\r\nOur privacy policy has been changed please visit nearest <kbd> MCB </kbd> branch for new prospectus.', '2017-12-16 06:29:23');
 
 -- --------------------------------------------------------
 
